@@ -87,8 +87,13 @@ Check #11 or #13.
 ## References
 
 https://bref.sh/docs/
+
 https://gist.github.com/fbrnc/396548c85ee083e32930
+
 https://www.eduforbetterment.com/send-email-using-amazon-ses-in-php/
+
 https://bref.sh/docs/function/handlers.html
+
 https://github.com/vasilyyaremchuk/event-registration-app-client
+
 https://github.com/vasilyyaremchuk/event-registration-app-server
