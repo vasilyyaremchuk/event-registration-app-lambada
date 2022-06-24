@@ -1,5 +1,10 @@
 # Lambada function SQS -> SES
 Event registration application: lambada part.
+See also,
+https://github.com/vasilyyaremchuk/event-registration-app-client
+https://github.com/vasilyyaremchuk/event-registration-app-server
+
+The Client part send Participant data to Server Drupal part, after that Drupal send Participant data to Amazon SQS and that Lambada function send it to Amazon SES to handle the email.
 
 ## Installation
 
@@ -63,9 +68,9 @@ Error code: InvalidParameterValueException. Error message: The provided executio
 
 When you tring to make it with AWS CLI:
 
-```$ aws lambda create-event-source-mapping --function-name app-dev-participant --batch-size 5 \
+$ aws lambda create-event-source-mapping --function-name app-dev-participant --batch-size 5 \
 --maximum-batching-window-in-seconds 60 \
---event-source-arn arn:aws:sqs:us-east-1:780261813487:event-participant```
+--event-source-arn arn:aws:sqs:us-east-1:780261813487:event-participant
 
 You can get:
 
@@ -85,3 +90,5 @@ https://bref.sh/docs/
 https://gist.github.com/fbrnc/396548c85ee083e32930
 https://www.eduforbetterment.com/send-email-using-amazon-ses-in-php/
 https://bref.sh/docs/function/handlers.html
+https://github.com/vasilyyaremchuk/event-registration-app-client
+https://github.com/vasilyyaremchuk/event-registration-app-server
