@@ -1,7 +1,9 @@
 # Lambda function SQS -> SES
 Event registration application: lambda part.
 See also,
+
 https://github.com/vasilyyaremchuk/event-registration-app-client
+
 https://github.com/vasilyyaremchuk/event-registration-app-server
 
 The Client part send Participant data to Server Drupal part, after that Drupal send Participant data to Amazon SQS and that Lambda function send it to Amazon SES to handle the email.
